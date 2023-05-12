@@ -34,7 +34,7 @@ public class KickingBall : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _isMouseDown = true;
-            Time.timeScale = 0.8f;
+            Time.timeScale = 0.5f;
         }
         else if (Input.GetMouseButtonUp(0))
         {

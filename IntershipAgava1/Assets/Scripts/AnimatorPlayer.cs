@@ -17,7 +17,7 @@ public class AnimatorPlayer : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             _animator.SetBool(Params.IsAiming, true);
-            _animator.Play("DropKick", 0, 0f);
+            _animator.Play("Strike", 0, 0f);
 
         }
         else if (Input.GetMouseButtonUp(0))
@@ -39,6 +39,6 @@ public class AnimatorPlayer : MonoBehaviour
     public static class States
     {
         public const string Idle = nameof(Idle);
-        public const string DropKick = nameof(DropKick);
+        public const string Strike = nameof(Strike);
     }
 }
