@@ -1,0 +1,12 @@
+# Blender3D MTL File: ClayMan 2.0.blend
+# Material Count: 1
+newmtl Clay
+Ns 35.294118
+Ka 0.000000 0.000000 0.000000
+Kd 0.909804 0.556863 0.000000
+Ks 0.091014 0.091014 0.091014
+Ni 1.000000
+d 1.000000
+illum 2
+
+
