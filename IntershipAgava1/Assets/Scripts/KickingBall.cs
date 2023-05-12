@@ -7,6 +7,7 @@ public class KickingBall : MonoBehaviour
     [SerializeField] private float _hifForce = 10.0f;
     [SerializeField] private GameObject _player;
     [SerializeField] private AnimatorPlayer _playerAnimator;
+    [SerializeField] private ParticleSystem _playerPrefab;
 
     private Vector3 _hitDirection = Vector3.forward;
     private bool _isMouseDown = false;
@@ -24,6 +25,7 @@ public class KickingBall : MonoBehaviour
 
     private void OnKickedAnimationFinished()
     {
+        _playerPrefab.Play();
         _ballRigidbody.AddForce(_hitDirection * _hifForce, ForceMode.Impulse);
     }
 
@@ -32,7 +34,7 @@ public class KickingBall : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _isMouseDown = true;
-            Time.timeScale = 0.4f;
+            Time.timeScale = 0.8f;
         }
         else if (Input.GetMouseButtonUp(0))
         {
